@@ -1,0 +1,141 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+}
+
+.app-container{
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5c0f697e9d5abb8c65cd6857/1599032187414-92U41D7HVIIFVCHHBDA3/Artboard+2.png?format=1000w");
+  background-size: cover;
+  
+}
+
+#header-container{
+  width: 100%;
+  height: 5rem;
+  background-color: #30D5C8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading-modal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  div{
+    width: 10rem;
+    height: 10rem;
+    background-image: url("https://cutewallpaper.org/21/loading-gif-transparent-background/Bee-Hollow-Farm-beekeeping-classes-and-events-near-Schodack-.gif");
+    background-size: cover;
+  }
+}
+
+.button-container{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding: 10px;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  &:hover{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 12px;
+  }
+}
+
+#login-button{
+  position: absolute;
+  left: calc(100vw - 6rem);
+}
+
+
+.login-form{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  height: fit-content;
+  z-index: 11;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color:  #30D5C8;
+}
+
+#cards-container{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.card-wrapper{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1.5rem;
+  width: 12rem;
+  height: 16rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 14px;
+  background-color: whitesmoke;
+
+  &:hover{
+    background-color: #30D5C8;
+  }
+  transition: all .8s cubic-bezier(.25,.8,.25,1);
+  font-weight: 700;
+}
+
+.disabled{
+  background-color: rgb(168, 168, 168);
+  &:hover{
+    background-color: grey;
+  }
+}
+
+
+.status-wrapper{
+  display: flex;
+}
+
+.completed-label{
+  cursor: pointer;
+}
